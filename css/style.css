@@ -3,7 +3,17 @@ body {
     background-color: black;
 }
 a {
-    color: white;
+  text-decoration: none;
+   color: white;
+   
+   transition: .3s;
+   background: linear-gradient(to right, #00ff03, #ff9e55, #9a40ff, #26ff00);
+   background-size: 0 3px;
+   background-position: 0 100%;
+   background-repeat: no-repeat;
+}
+a:hover {
+  background-size: 100% 3px;
 }
 h1, h2, h3 {
     color: white;
