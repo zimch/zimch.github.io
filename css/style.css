@@ -124,7 +124,7 @@ p {
   }
 
 #navbar {
-  width: 450px;
+  width: auto;
   margin: auto;
   padding: 0;
   list-style: none;
