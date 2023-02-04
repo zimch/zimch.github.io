@@ -15,6 +15,11 @@ a {
 a:hover {
   background-size: 100% 3px;
 }
+#indev {
+  width: 720px;
+  display: block;
+  margin: auto;
+}
 h1, h2, h3 {
     color: white;
     letter-spacing: 1px;
@@ -128,16 +133,16 @@ p {
   margin: auto;
   padding: 0;
   list-style: none;
-  border: 2px solid white;
-  border-radius: 4px;
+  /* border: 2px solid white; */
+  /* border-radius: 4px; */
   text-align: center;
-  background-color: ghostwhite;
+  /* background-color: ghostwhite; */
 }
 #navbar li {
   display: inline;
 }
 #navbar a {
-  color: #2f363c;
+  color: whitesmoke;
   padding: 5px 10px;
   text-decoration: none;
   font-weight: bold;
@@ -146,5 +151,5 @@ p {
 }
 #navbar a:hover {
   border-radius: 20px 5px;
-  background-color: darkgrey;
+  background-color: darkorchid;
 }
