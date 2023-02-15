@@ -365,117 +365,160 @@ textarea {
     padding: 0.2em 0;
 }
 
-/* inter-regular - latin */
+/* roboto-slab-regular - latin */
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Inter';
+  font-family: 'Roboto Slab';
   font-style: normal;
   font-weight: 400;
-  src: url('../fonts/inter-v12-latin-regular.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
-       url('../fonts/inter-v12-latin-regular.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: url('../fonts/roboto-slab-v24-latin-regular.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
+       url('../fonts/roboto-slab-v24-latin-regular.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
-/* inter-600 - latin */
+/* roboto-slab-800 - latin */
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Inter';
+  font-family: 'Roboto Slab';
   font-style: normal;
-  font-weight: 600;
-  src: url('../fonts/inter-v12-latin-600.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
-       url('../fonts/inter-v12-latin-600.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  font-weight: 800;
+  src: url('../fonts/roboto-slab-v24-latin-800.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
+       url('../fonts/roboto-slab-v24-latin-800.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
-/* inter-900 - latin */
+
+/* roboto-regular - latin */
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Inter';
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/roboto-v30-latin-regular.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
+       url('../fonts/roboto-v30-latin-regular.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* roboto-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/roboto-v30-latin-700.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
+       url('../fonts/roboto-v30-latin-700.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* roboto-900 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Roboto';
   font-style: normal;
   font-weight: 900;
-  src: url('../fonts/inter-v12-latin-900.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
-       url('../fonts/inter-v12-latin-900.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: url('../fonts/roboto-v30-latin-900.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
+       url('../fonts/roboto-v30-latin-900.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
+
 html {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
-*, *::before, *::after {
-  box-sizing: inherit;
-}
+
 body {
-  font-family: 'Inter';
-  font-style: 'normal';
-  font-size: 16px;
-  line-height: 1.2;
-  font-weight: normal;
-  color: #FFFFFF;
-  background-color: black; 
+     font-family: 'Roboto Slab';
+     font-style: normal;
+     font-size: 14px;
+     line-height: 1.2;
+     font-weight: normal;
+     color: #49454F;
+     background-color: #EDEAE1;
 }
+
+*,  *::before, *::after {
+    box-sizing: inherit;
+}
+
 .wrapper {
-  max-width: 1304px;
-  margin: 0 auto;
+    max-width: 1000px;
+    margin: 0 auto;
 }
+
 .header {
-  background-color: black;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
+    background-color: #35465D;
+    padding-top: 6px;
+    padding-bottom: 6px;
 }
-.header__wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  padding-top: 31px;
-  padding-bottom: 31px;
+
+.header__nav {
+    background-color: #FFFBFE;
+    padding: 12px;
+    left: 0;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    /* border-color: #CAC4D0; */
+    border: 1px solid #CAC4D0;
 }
+
+.nav__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .header__list {
-  vertical-align: middle;
-  display: flex;
-  flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
 }
+
 .header__item {
-  margin-right: 102px;
+    margin-right: 80px;
 }
-.header__item:last-child {
-  margin-right: 0;
-}
+
 .header__link {
-  font-size: 22px;
-  line-height: 27px;
-  color: #FFFFFF;
-  text-decoration: none;
+    font-family: 'Roboto';
+    font-style: "normal";
+    font-size: 18px;
+    font-weight: "regular";
+    line-height: 20px;
+    color: #49454F;
+    text-decoration: none;
 }
-.header__link:hover, .header__link:focus, .header__link:active {
-  opacity: .75;
+
+.header__link:hover, .header__link:focus {
+    transition: all 0.3s ease-in-out;
+    opacity: .75;
+    color: #7BABEB;
+    /* transition-delay: 0.5s; */
 }
-.intro {
-  min-height: 100hv;
-  background-size: cover;
-  padding-top: 331px;
+
+.header__link:not(hover), .header__link:not(focus) {
+    transition: all 0.3s ease-in-out;
+    /* opacity: .75; */
+    color: #49454F;
+    /* transition-delay: 0.5s; */
 }
-.intro__title {
-  font-weight: 900;
-  font-size: 96px;
-  line-height: 116px;
-  max-width: 884px;
-  margin-bottom: 54px;
-  float: right;
+
+.header__link:active {
+    color: #1C1B1F;
 }
-.intro__title_img {
-  width: 386px;
-  filter: drop-shadow(-10px 15px 13px rgba(0, 0, 0, 0.25));
-  border-radius: 61px;
-  float: left;
+
+.main__page-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
 }
-.git__link {
-  font-style: italic;
-  text-decoration: none;
+
+.articles__list {
+    margin-right: 19px;
+    max-width: 660px;
 }
-.git__link:hover, .git__link:focus, .git__link:active {
-  opacity: .75;
+
+.side__bar {
+    top: 64px;
+    position: sticky;
+    width: 320px;
+    height: 800px;
+    background-color: #FFFBFE;
+    margin-top: 20px;
 }
-.intro__subtitle {
-  font-weight: 400;
-  font-size: 26px;
-  line-height: 144.02%;
-  max-width: 863px;
-  float: right;
+
+.article__list-article {
+    margin-top: 20px;
+    width: 660px;
+    height: 435px;
+    background-color: #FFFBFE;
 }
