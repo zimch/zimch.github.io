@@ -674,5 +674,4 @@ button.article__material-button:hover {
 button.article__material-button:not(hover) {
     transition: all 0.2s ease-in-out;
     opacity: 1;
->>>>>>> f03d6a3f4066251ef787283943706db6fdfea7cc
 }
