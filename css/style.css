@@ -527,12 +527,28 @@ body {
 }
 
 .side__bar {
-    top: 64px;
+    /* top: 64px;
     position: sticky;
     width: 320px;
     height: 800px;
     background-color: #FFFBFE;
+    margin-top: 20px; */
+    /* display:flex;    */
+    /* flex:1; */
+    /* flex-direction:column; */
+    /* margin-bottom:-12px; */
+    /* margin-top:-12px; */
+    /* position:relative; */
+    /* width:100%; */
+    /* max-width:100%; */
+
+    top: 0px;
+    width: 320px;
+    height: 800px;
+    background-color: #FFFBFE;
     margin-top: 20px;
+    position: sticky;
+    overflow: auto;
 }
 
 .article__list-article {
